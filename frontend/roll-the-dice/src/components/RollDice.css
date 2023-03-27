@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dice-container {
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+    padding: 30px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.main-content {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.roll-history-container {
+    flex: 0 1 auto;
+    min-width: 300px;
+    margin-left: 60px;
+}
+
+.buttonRoll {
+    background-color: #BC8F8F !important;
+    border: 2px solid #D8BFD8 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+
+.buttonRoll:hover {
+    background-color: #D8BFD8 !important;
+    border: 2px solid #BC8F8F !important;
+}
+
+@media (max-width: 767px) {
+    .dice-container {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .buttonRoll {
+        font-size: 1.5rem;
+    }
+
+    .content-container {
+        display: grid;
+    }
+
+    .main-content {
+        margin: 0;
+    }
+
+    .roll-history-container {
+        margin-left: 0;
+    }
+}
